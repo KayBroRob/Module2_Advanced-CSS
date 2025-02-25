@@ -4,10 +4,10 @@
   
   /* brand color palette */
   :root {
-    --primary: rgba(68, 88, 119, 1);
-    --secondary: rgba(146, 204, 206, 1);
-    --tertiary: rgba(49, 52, 61, 1);
-    --dark: rgba(28, 29, 33, 1);
+    --primary: rgb(104, 68, 119);
+    --secondary: rgb(203, 146, 206);
+    --tertiary: rgb(61, 49, 53);
+    --dark: rgb(33, 28, 28);
     --light: rgba(238, 238, 247, 1);
   }
   
@@ -222,23 +222,23 @@
   /* portfolio project images */
   /* TODO: Add portfolio project images here using background images*/
   .run-buddy {
-    
+    background-image: url(https://images.app.goo.gl/LPCLZvQ9wdCxZGKB8);
   }
   
   .led-wall {
-    
+    background-image: url(https://images.app.goo.gl/p5suTndBE8jSrgd16);
   }
   
   .react-calc {
-    
+    background-image: url(https://images.app.goo.gl/34o41XjvER92Bbny7);
   }
   
-  .pastel-puzzles {
-    
+  .pastel-puzzels {
+    background-image: url(https://images.app.goo.gl/UAWSbDtBQr5K1HxZ8);
   }
   
   .surf-report {
-    
+    background-image: url(https://images.app.goo.gl/JHx6QUZUDGKum3BRA);
   }
   
   /* media queries */
@@ -278,3 +278,15 @@
   }
   
   /* TODO: add media query for a max-width of 768px */
+
+  @media (max-width: 768px) {
+    .portfolio-photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-photos img{
+        width: 80%;
+        height: auto;
+    }
+  }
